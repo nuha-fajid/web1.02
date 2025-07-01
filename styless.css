@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.bucket-list {
+    list-style: none;
+}
+
+.bucket-item {
+    background-color: #ecf0f1;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+.bucket-item:hover {
+    background-color: #d5dbdb;
+    transform: translateX(5px);
+}
+
+.bucket-item.completed {
+    background-color: #d5f4e6;
+    border-left-color: #27ae60;
+    opacity: 0.8;
+}
+
+.bucket-item.completed .goal-text {
+    text-decoration: line-through;
+    color: #7f8c8d;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 2rem;
+}
+
+.goal-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.category {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.stats {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .bucket-item {
+        padding: 1rem;
+    }
+}
